@@ -25,8 +25,11 @@ export default class Navbar extends Component {
       case "/jobs":
         this.setState({ topics: false, jobs: true, remote: false })
         break
-      default:
+      case "/remote":
         this.setState({ topics: false, jobs: false, remote: true })
+        break
+      default:
+        this.setState({ topics: false, jobs: false, remote: false })
     }
   }
 
@@ -41,7 +44,7 @@ export default class Navbar extends Component {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <Link to='/' activeClassName="navbar-brand">
+            <Link to='/' activeClassName="navbar-brand" onClick={() => this.handleClick('/')}>
               <b className='text-danger'>Ruby</b> China
             </Link>
           </div>

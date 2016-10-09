@@ -13,6 +13,7 @@ export default class Lists extends Component {
           </a>
           <div className="media-body">
             <Link to={`/topics/${topic.id}`} className='title'>{topic.title}</Link>
+            {topic.excellent && <span ref='data' className='glyphicon glyphicon-heart left' title='精华帖'></span>}
             <TopicInfo topic={topic}></TopicInfo>
 
           </div>

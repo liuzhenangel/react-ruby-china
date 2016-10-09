@@ -24,6 +24,7 @@ export default class Topics extends Component {
           <span className='separator light-gray-color'>查看:</span>
           <Link to='/topics' onClick={() => this.handleClick('last_actived')}>默认</Link>
           <span className='separator'>/</span>
+          <span className='glyphicon glyphicon-heart right' title='精华帖'></span>
           <Link to='/topics?type=excellent' onClick={() => this.handleClick('excellent')}>优质帖子</Link>
           <span className='separator'>/</span>
           <Link to='/topics?type=no_reply' onClick={() => this.handleClick('no_reply')}>无人问津</Link>

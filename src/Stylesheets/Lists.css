@@ -21,3 +21,18 @@
 .separator {
   padding: 0 5px;
 }
+
+span.glyphicon-heart {
+  color: #EB5424;
+}
+
+span.glyphicon.left {
+  margin-left: 3px;
+}
+span.glyphicon.right {
+  margin-right: 3px;
+}
+span.glyphicon {
+  line-height: 17px;
+  top: 3px;
+}
