@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router';
 import Lists from './Lists';
+import Paginate from './Paginate';
 
 export default class Jobs extends Component {
   constructor(props) {
@@ -8,7 +9,6 @@ export default class Jobs extends Component {
     // node_id: 25 是招聘节点
     this.props.actions.fetchTopics({node_id: 25})
   }
-
   render() {
     const count = this.props.results.topics.length
     return (
@@ -28,8 +28,7 @@ export default class Jobs extends Component {
           </div>
         </div>
         <Lists topics={this.props.results.topics} />
-        <div className='panel-footer'>
-        </div>
+        <Paginate actions={this.props.actions} options={{node_id: 25}}/>
       </div>
     );
   }

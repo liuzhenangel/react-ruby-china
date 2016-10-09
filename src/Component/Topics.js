@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import ReactPaginate from 'react-paginate';
+import Paginate from './Paginate';
 import {Link} from 'react-router';
 import Lists from './Lists';
 
 export default class Topics extends Component {
   constructor(props) {
     super(props);
-    const type = this.props.location.query.type
-    this.props.actions.fetchTopics({type: type||'last_actived'})
+    this.state = {
+      type: this.props.location.query.type||'last_actived',
+    }
+    this.props.actions.fetchTopics({type: this.state.type})
   }
 
-  handleClick(type) {
+  handleClick = (type) => {
+    this.setState({type: type})
     this.props.actions.fetchTopics({type: type})
   }
 
@@ -27,8 +33,7 @@ export default class Topics extends Component {
           <Link to='/topics?type=recent' onClick={() => this.handleClick('recent')}>最新创建</Link>
         </div>
         <Lists topics={this.props.results.topics} />
-        <div className='panel-footer'>
-        </div>
+        <Paginate actions={this.props.actions} options={{type: this.state.type}}/>
       </div>
     );
   }

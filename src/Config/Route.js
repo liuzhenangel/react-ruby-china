@@ -12,7 +12,7 @@ import App from '../App';
 
 
 const RouteConfig = (
-  <Router history={browserHistory}>
+  <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
       <Route path="topics" component={Topics}/>

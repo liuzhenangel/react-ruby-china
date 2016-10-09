@@ -31,7 +31,7 @@ export const fetchTopics = options => (dispatch) => {
     node = `node_id=${options.node_id}`
   }
   if (options) {
-    url = `${BASIC_URL}/topics?${node}&limit=${options.limit||20}&type=${options.type||'last_actived'}`
+    url = `${BASIC_URL}/topics?${node}&limit=${options.limit||20}&type=${options.type||'last_actived'}&offset=${options.offset||0}`
   }
   console.log('url', url)
 
