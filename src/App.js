@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import * as actions from './Action'
 import Navbar from './Component/Navbar';
-import Footer from './Component/Footer';
+//import Footer from './Component/Footer';
 import Promote from './Component/Promote';
 
 class App extends Component {
@@ -47,7 +47,6 @@ class App extends Component {
       <div>
         <Navbar path={this.props.location.pathname}/>
         { layout }
-        <Footer />
       </div>
     );
   }
