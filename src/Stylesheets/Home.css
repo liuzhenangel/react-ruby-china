@@ -1,0 +1,25 @@
+.home-center {
+  margin: auto;
+  width: 480px;
+}
+.box-top-line {
+  border-top: 1px solid #ddd;
+  margin: 0 -4px;
+}
+
+.thumbnail .caption {
+  padding: 9px 9px 0 9px;
+}
+
+.thumbnail>img.margin-30 {
+  height: 200px;
+  width: 80px;
+}
+
+.caption a:hover {
+  text-decoration: none;
+}
+
+.caption a {
+  color: #666;
+}

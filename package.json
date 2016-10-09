@@ -1,0 +1,33 @@
+{
+  "name": "react-ruby-china",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "express": "^4.14.0",
+    "react-scripts": "0.4.3",
+    "webpack-dev-server": "^1.16.1",
+    "redux-logger": "^2.6.1"
+  },
+  "dependencies": {
+    "codemirror": "^5.19.0",
+    "es6-promise": "^4.0.5",
+    "history": "^4.2.0",
+    "isomorphic-fetch": "^2.2.1",
+    "marked": "^0.3.6",
+    "normalize.css": "^4.2.0",
+    "react": "^15.3.2",
+    "react-addons-transition-group": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-md-editor": "^0.2.2",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.8.1",
+    "redux-thunk": "^2.1.0",
+    "redux": "^3.6.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

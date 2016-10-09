@@ -1,0 +1,272 @@
+.markdown .save-state.true {
+  color: #31708f;
+}
+.markdown .save-state.false {
+  color: #a94442;
+}
+.markdown {
+  position: relative;
+  line-height: 1.8em;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  font-family: "PingFang SC","Hiragino Sans GB",Helvetica,Arial,"Source Han Sans CN",Roboto,"Heiti SC","Microsoft Yahei",sans-serif !important
+}
+.markdown .preview {
+  float: left;
+  width: 100%;
+  margin-top: 43px;
+  border: 1px solid #ccc;
+  margin-top: 53px;
+  padding: 0 10px;
+}
+.markdown img {
+  max-width: 100%
+}
+
+.markdown p,.markdown pre,.markdown ul,.markdown ol,.markdown blockquote {
+  margin-bottom: 16px
+}
+
+.markdown p {
+  font-size: 14px;
+  line-height: 1.5em
+}
+
+.markdown hr {
+  border: 2px dashed #F0F4F6;
+  border-bottom: 0px;
+  margin: 18px auto;
+  width: 50%
+}
+
+.markdown blockquote {
+  margin: 0 18px 15px 18px;
+  padding: 0;
+  padding-left: 32px;
+  border: 0px;
+  quotes: "“" "”" "‘" "’";
+  position: relative;
+  line-height: 1.45
+}
+
+.markdown blockquote p {
+  display: inline;
+  color: #999
+}
+
+.markdown blockquote:before,.markdown blockquote:after {
+  display: block;
+  content: "\201C";
+  font-size: 35px;
+  position: absolute;
+  font-family: serif;
+  left: 0px;
+  top: 0px;
+  color: #aaa
+}
+
+.markdown pre {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-size: 12px;
+  background-color: #f9f9f9;
+  border: 0px;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  margin: 0 -15px 15px -15px;
+  padding: 5px 15px;
+  color: #444;
+  overflow: auto;
+  border-radius: 0px
+}
+
+.markdown pre code {
+  display: block;
+  line-height: 150%;
+  padding: 0 !important;
+  font-size: 12px !important;
+  background-color: #f9f9f9 !important;
+  border: none !important
+}
+
+.markdown p:last-child,.markdown blockquote:last-child,.markdown pre:last-child {
+  margin-bottom: 0
+}
+
+.markdown pre::-webkit-scrollbar {
+  height: 8px;
+  width: 8px
+}
+
+.markdown pre::-webkit-scrollbar-thumb:horizontal {
+  width: 25px;
+  background-color: #ccc;
+  -webkit-border-radius: 4px
+}
+
+.markdown pre::-webkit-scrollbar-track-piece {
+  margin-bottom: 10px;
+  background-color: #e5e5e5;
+  border-bottom-left-radius: 4px 4px;
+  border-bottom-right-radius: 4px 4px;
+  border-top-left-radius: 4px 4px;
+  border-top-right-radius: 4px 4px
+}
+
+.markdown pre::-webkit-scrollbar-thumb:vertical {
+  height: 25px;
+  background-color: #ccc;
+  -webkit-border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px white
+}
+
+.markdown code {
+  display: inline-block;
+  font-size: 12px !important;
+  background-color: #f5f5f5 !important;
+  border: 0px;
+  color: #444 !important;
+  padding: 1px 4px !important;
+  margin: 2px;
+  border-radius: 3px;
+  word-break: break-all;
+  line-height: 20px;
+  font-family: Monaco,Menlo, "Courier New", monospace
+}
+
+.markdown a:link,.markdown a:visited {
+  color: #0069D6 !important;
+  text-decoration: none !important
+}
+
+.markdown a:hover {
+  text-decoration: underline !important;
+  color: #00438A !important
+}
+
+.markdown a.mention-floor {
+  color: #60b566 !important;
+  margin-right: 3px
+}
+
+.markdown a.mention {
+  color: #777 !important;
+  font-weight: bold;
+  margin-right: 2px
+}
+
+.markdown a.mention b {
+  color: #777 !important;
+  font-weight: normal
+}
+
+.markdown h1,.markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6 {
+  font-weight: bold;
+  text-align: left;
+  margin-top: 10px !important;
+  margin-bottom: 16px
+}
+
+.markdown h1 {
+  font-size: 26px !important;
+  text-align: center;
+  margin-bottom: 30px !important
+}
+
+.markdown h2,.markdown h3,.markdown h4 {
+  text-align: left;
+  font-weight: bold;
+  font-size: 16px !important;
+  line-height: 100%;
+  margin: 0;
+  color: #555;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px
+}
+
+.markdown h2 {
+  font-size: 20px !important;
+  border-bottom-width: 2px;
+  padding-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #111
+}
+
+.markdown h3 {
+  font-size: 18px !important;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #333
+}
+
+.markdown h5,.markdown h6 {
+  font-size: 15px;
+  line-height: 100%;
+  color: #777
+}
+
+.markdown h6 {
+  font-size: 14px;
+  color: #999
+}
+
+.markdown strong {
+  color: #000
+}
+
+.markdown ul,.markdown ol {
+  list-style-position: inside;
+  list-style-type: square;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0px 20px
+}
+
+.markdown ul p,.markdown ul blockquote,.markdown ul pre,.markdown ol p,.markdown ol blockquote,.markdown ol pre {
+  margin-bottom: 8px
+}
+
+.markdown ul li,.markdown ol li {
+  line-height: 1.6em;
+  padding: 2px 0;
+  color: #333
+}
+
+.markdown ul ul,.markdown ol ul {
+  list-style-type: circle;
+  margin-bottom: 0px
+}
+
+.markdown ol {
+  list-style-type: decimal
+}
+
+.markdown ol ol {
+  list-style-type: lower-alpha;
+  margin-bottom: 0px
+}
+
+.markdown img {
+  vertical-align: top;
+  max-width: 100%
+}
+
+.markdown a.zoom-image {
+  cursor: zoom-in
+}
+
+.markdown a.at_floor {
+  color: #60B566 !important
+}
+
+.markdown a.at_user {
+  color: #0069D6 !important
+}
+
+.markdown img.twemoji {
+  width: 20px
+}

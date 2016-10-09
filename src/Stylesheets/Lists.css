@@ -1,0 +1,23 @@
+.topic-lists .title {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.topic-lists .infos {
+  color: #ABA8A6;
+  font-size: 12px;
+  padding-top: 14px;
+}
+.count.media-right {
+  vertical-align: middle;
+}
+.topic-lists .topic {
+  margin: 0 -15px;
+  padding: 10px 15px;
+  border-bottom: 1px solid #F0F0F0;
+}
+.topic-lists .panel-body {
+  padding: 0 15px;
+}
+.separator {
+  padding: 0 5px;
+}
