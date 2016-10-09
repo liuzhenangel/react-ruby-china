@@ -9,6 +9,7 @@
     "redux-logger": "^2.6.1"
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "codemirror": "^5.19.0",
     "es6-promise": "^4.0.5",
     "history": "^4.2.0",

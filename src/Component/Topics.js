@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import ReactPaginate from 'react-paginate';
 import Paginate from './Paginate';
 import {Link} from 'react-router';
 import Lists from './Lists';

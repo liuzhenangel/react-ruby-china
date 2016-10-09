@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router';
 import Lists from './Lists';
 
 export default class Topics extends Component {

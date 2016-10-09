@@ -27,7 +27,7 @@ class App extends Component {
                   {childrenWithProps}
                 </div>
                </div>
-    } else if (pathname == '/topics/new'){
+    } else if (pathname === '/topics/new'){
       layout = <div>
                 {childrenWithProps}
                </div>
@@ -45,7 +45,7 @@ class App extends Component {
     }
     return (
       <div>
-        <Navbar />
+        <Navbar path={this.props.location.pathname}/>
         { layout }
         <Footer />
       </div>
@@ -59,8 +59,8 @@ const mapDispatchToProps = dispatch => ({
 
 const mapStateToProps = state => {
   const { postsByReddit } = state
-  let replies = [], topics = [], topic = {}, results
-  if (results = postsByReddit['results']) {
+  let replies = [], topics = [], topic = {}, results = postsByReddit['results']
+  if (results) {
     switch (results.type) {
       case actions.TOPIC:
         topic = results.topic
@@ -69,6 +69,8 @@ const mapStateToProps = state => {
       case actions.TOPICS:
         topics = results.topics
         break
+      default:
+        {}
     }
   }
   return {
