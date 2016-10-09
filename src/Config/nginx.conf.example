@@ -1,0 +1,16 @@
+server {
+  listen 80;
+  server_name react.liuzhen.me;
+  root /home/ruby/react-ruby-china/build;
+  index index.html;
+
+  location ^~ /static/ {
+    gzip_static on;
+    expires max;
+    add_header Cache-Control public;
+  }
+
+  location / {
+    try_files $uri $uri/ /index.html;
+  }
+}
