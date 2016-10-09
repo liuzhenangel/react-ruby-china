@@ -3,7 +3,8 @@ import Excellent from './Excellent'
 import '../Stylesheets/Home.css'
 
 class Home extends Component {
-  componentDidMount() {
+  constructor(props) {
+    super(props);
     this.props.actions.fetchTopics({type: 'excellent'})
   }
 

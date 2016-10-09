@@ -30,7 +30,6 @@ export const fetchTopics = options => (dispatch) => {
   if (options && options.node_id){
     node = `node_id=${options.node_id}`
   }
-  console.log(options)
   if (options) {
     url = `${BASIC_URL}/topics?${node}&limit=${options.limit||20}&type=${options.type||'last_actived'}`
   }

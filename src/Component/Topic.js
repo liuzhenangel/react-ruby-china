@@ -4,7 +4,8 @@ import Replies from './Replies';
 import '../Stylesheets/Markdown.css';
 
 export default class Topic extends Component {
-  componentDidMount() {
+  constructor(props) {
+    super(props);
     this.props.actions.fetchTopic(this.props.params.id)
   }
 

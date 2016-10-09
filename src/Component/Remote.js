@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import Lists from './Lists';
 
 export default class Remote extends Component {
-  componentDidMount() {
+  constructor(props) {
+    super(props);
     this.props.actions.fetchTopics({node_id: 25, limit: 150})
   }
 

@@ -3,7 +3,8 @@ import {Link} from 'react-router';
 import Lists from './Lists';
 
 export default class Topics extends Component {
-  componentDidMount() {
+  constructor(props) {
+    super(props);
     const type = this.props.location.query.type
     this.props.actions.fetchTopics({type: type||'last_actived'})
   }

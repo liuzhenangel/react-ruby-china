@@ -3,7 +3,8 @@ import {Link} from 'react-router';
 import Lists from './Lists';
 
 export default class Jobs extends Component {
-  componentDidMount() {
+  constructor(props) {
+    super(props);
     // node_id: 25 是招聘节点
     this.props.actions.fetchTopics({node_id: 25})
   }
