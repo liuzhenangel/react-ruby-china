@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Excellent from './Excellent'
+import {Link} from 'react-router';
 import '../Stylesheets/Home.css'
 
 class Home extends Component {
@@ -79,12 +80,12 @@ class Home extends Component {
             <div className="thumbnail">
               <img className='margin-30' src="https://twemoji.b0.upaiyun.com/2/svg/1f381.svg" alt="v2ex.png" />
               <div className="caption box-top-line">
-                <a href='/topics?type=excellent'>
+                <Link to='/topics?type=excellent'>
                   <div>
                     精华文章
                     <span className='glyphicon glyphicon-arrow-right pull-right'></span>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
