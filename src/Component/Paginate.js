@@ -33,8 +33,8 @@ export default class Paginate extends Component {
           breakLabel={<a href="">...</a>}
           breakClassName={"break-me"}
           pageNum={this.state.pageNum}
-          marginPagesDisplayed={2}
-          pageRangeDisplayed={5}
+          marginPagesDisplayed={1}
+          pageRangeDisplayed={3}
           clickCallback={this.handlePageClick}
           containerClassName={"pagination"}
           subContainerClassName={"pages pagination"}
