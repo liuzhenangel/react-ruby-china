@@ -79,7 +79,7 @@ class Home extends Component {
             <div className="thumbnail">
               <img className='margin-30' src="https://twemoji.b0.upaiyun.com/2/svg/1f381.svg" alt="v2ex.png" />
               <div className="caption box-top-line">
-                <a href='http://v2ex.liuzhen.me' target='_blank'>
+                <a href='/topics?type=excellent'>
                   <div>
                     精华文章
                     <span className='glyphicon glyphicon-arrow-right pull-right'></span>
