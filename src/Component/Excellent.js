@@ -11,10 +11,10 @@ export default class Topics extends Component {
         </div>
         <div className='row reset-row-xs'>
           <div className='col-md-6'>
-            <Lists topics={this.props.topics.splice(0, length/2)} />
+            <Lists topics={this.props.topics.slice(0, length/2)} />
           </div>
           <div className='col-md-6'>
-            <Lists topics={this.props.topics} />
+            <Lists topics={this.props.topics.slice(length/2, length)} />
           </div>
         </div>
       </div>
