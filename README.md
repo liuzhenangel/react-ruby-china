@@ -10,7 +10,7 @@
 
 react-ruby-china 项目是一个利用 react, react-dom, react-redux, react-router, redux, es6, redux-thunk 和 ruby-china api 实现的 RubyChina 社区克隆项目, 主要目的是为了学习 reac.js, 很适合学习 reac.js 的朋友参考.
 
-这是一个前后端分离项目, 前端主要是 react, react-dom, react-redux, react-router, redux, es6, redux-thunk 和 ruby-china api, css 框架使用了 bootstrap. 后端利用 ruby-china 开放的 api. 项目目前仍在持续优化中, 将会支持响应式布局.
+这是一个前后端分离项目, 前端主要是 react, react-dom, react-redux, react-router, redux, es6, redux-thunk, css 框架使用了 bootstrap. 后端利用 ruby-china 开放的 api. 支持响应式布局. 部分功能仍在持续完善中.
 
 ## 核心技术框架
 
@@ -70,7 +70,7 @@ $ npm run deploy
 
 ## 学习参考资料
 
->在学习 React 过程中, React 文档做的没有 Vue 好, 文档中的例子各种语法. 对着照着不一定对, 也不方便查询, 踩过很多坑后发现一下相对比较好的文档, 分享给大家.
+>在学习 React 过程中, React 文档做的没有 Vue 好, 文档中的例子各种语法. 对着照做不一定对, 也不方便查询, 踩过很多坑后发现一下相对比较好的文档, 分享给大家.
 
 React 中文文档(这个文档很好查询, 但是很多内容写的太简单了没讲清楚, 而且内容不全): <https://hulufei.gitbooks.io/react-tutorial/content/index.html>
 
@@ -110,11 +110,7 @@ Redux 介绍: <http://www.alloyteam.com/2015/09/react-redux/>
 
 [] 登录与注册
 
-[] 支持响应式布局
-
 [] 支持 创建 及 更新 操作
-
-PS: 项目目前仍在持续更新中, 手机端样式及部分功能还未支持.
 
 ## LICENSE
 
