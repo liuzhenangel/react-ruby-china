@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import DropdownMenu from './DropdownMenu';
 import classname from 'classnames';
 import {Link} from 'react-router';
+import '../Stylesheets/Navbar.css';
 
 export default class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      hide: false,
       topics: false,
       jobs: false,
       remote: false
@@ -15,6 +17,10 @@ export default class Navbar extends Component {
 
   componentDidMount() {
     this.handleClick(this.props.path)
+  }
+
+  handleChangeHide() {
+    this.setState({ hide: false })
   }
 
   handleClick = (name) => {
@@ -31,41 +37,44 @@ export default class Navbar extends Component {
       default:
         this.setState({ topics: false, jobs: false, remote: false })
     }
+    this.setState({ hide: true })
   }
 
   render() {
     return (
-      <nav className="navbar navbar-default" role="navigation">
-        <div className="container-fluid container">
-          <div className="navbar-header">
-            <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span className="sr-only">Toggle navigation</span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
-            </button>
-            <Link to='/' activeClassName="navbar-brand" onClick={() => this.handleClick('/')}>
-              <b className='text-danger'>Ruby</b> China
-            </Link>
-          </div>
+      <div className='header'>
+        <nav className="navbar navbar-default navbar-fixed-sm" role="navigation">
+          <div className="container">
+            <div className="navbar-header" id='navbar-header'>
+              <button type="button" onClick={()=>this.handleChangeHide()} className="bs-navbar-collapse navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span className="sr-only">Toggle navigation</span>
+                <span className="icon-bar"></span>
+                <span className="icon-bar"></span>
+                <span className="icon-bar"></span>
+              </button>
+              <Link to='/' activeClassName="navbar-brand" onClick={() => this.handleClick('/')}>
+                <b className='text-danger'>Ruby</b> China
+              </Link>
+            </div>
 
-          <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul className="nav navbar-nav">
-              <li className={classname({active: this.state.topics})}>
-               <Link to="/topics" onClick={() => this.handleClick('/topics')}>社区</Link>
-              </li>
-              <li className={classname({active: this.state.jobs})}>
-                <Link to="/jobs" onClick={() => this.handleClick('/jobs')}>招聘</Link>
-              </li>
-              <li className={classname({active: this.state.remote})}>
-                <Link to="/remote" onClick={() => this.handleClick('/remote')}>远程工作</Link>
-              </li>
-              <li><a href="https://gems.ruby-china.org/" target='_blank'>Gems</a></li>
-            </ul>
-            <DropdownMenu></DropdownMenu>
+            <div className={classname("collapse", "navbar-collapse", { hide: this.state.hide })} id="bs-example-navbar-collapse-1">
+              <ul className="nav navbar-nav">
+                <li className={classname({active: this.state.topics})}>
+                 <Link to="/topics" onClick={() => this.handleClick('/topics')}>社区</Link>
+                </li>
+                <li className={classname({active: this.state.jobs})}>
+                  <Link to="/jobs" onClick={() => this.handleClick('/jobs')}>招聘</Link>
+                </li>
+                <li className={classname({active: this.state.remote})}>
+                  <Link to="/remote" onClick={() => this.handleClick('/remote')}>远程工作</Link>
+                </li>
+                <li><a href="https://gems.ruby-china.org/" target='_blank'>Gems</a></li>
+              </ul>
+              <DropdownMenu></DropdownMenu>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     );
   }
 }

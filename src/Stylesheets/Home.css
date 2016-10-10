@@ -2,6 +2,36 @@
   margin: auto;
   width: 480px;
 }
+
+@media (max-width: 768px) {
+  .reset-panel-xs {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .no-padding-xs {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .reset-panel-xs .topic {
+    margin: 0 -30px;
+  }
+
+  .margin-xs {
+    margin-top: 50px;
+  }
+
+  .reset-row-xs {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .no-margin-bottom-xs {
+    margin-bottom: 0;
+  }
+}
+
 .box-top-line {
   border-top: 1px solid #ddd;
   margin: 0 -4px;

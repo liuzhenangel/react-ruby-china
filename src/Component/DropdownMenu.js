@@ -4,7 +4,7 @@ import {Link} from 'react-router';
 export default class Home extends Component {
   render() {
     return (
-      <ul className="nav navbar-nav navbar-right">
+      <ul className="nav navbar-nav navbar-right hidden-xs">
         <li><a href="#"><span className='glyphicon glyphicon-bell'></span></a></li>
         <li className="dropdown">
           <a href="#" className="dropdown-toggle" data-toggle="dropdown">

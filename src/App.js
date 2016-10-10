@@ -23,9 +23,7 @@ class App extends Component {
 
     if (pathname === '/programmer' || pathname==='/'){
       layout = <div className='container'>
-                <div className='row'>
-                  {childrenWithProps}
-                </div>
+                {childrenWithProps}
                </div>
     } else if (pathname === '/topics/new'){
       layout = <div>
@@ -33,11 +31,11 @@ class App extends Component {
                </div>
     } else {
       layout = <div className='container'>
-                <div className='row'>
-                  <div className='col-md-9'>
+                <div className='row margin-xs'>
+                  <div className='col-md-9 no-padding-xs'>
                     {childrenWithProps}
                   </div>
-                  <div className='col-md-3'>
+                  <div className='col-md-3 no-padding-xs'>
                     <Promote />
                   </div>
                 </div>

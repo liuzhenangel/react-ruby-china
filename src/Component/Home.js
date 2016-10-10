@@ -11,8 +11,8 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
-        <div className='panel panel-default'>
+      <div className='home-wrap'>
+        <div className='panel panel-default hidden-xs hidden-sm'>
           <div className='panel-body home-center'>
             <div className="media">
               <a className="media-left" href="#">
@@ -33,7 +33,7 @@ class Home extends Component {
           </div>
         </div>
 
-        <div className='row'>
+        <div className='row hidden-sm hidden-xs'>
           <div className='col-md-3'>
             <div className="thumbnail">
               <img className='margin-30' src="https://twemoji.b0.upaiyun.com/2/svg/1f381.svg" alt="blog.png" />
