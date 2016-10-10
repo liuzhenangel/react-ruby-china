@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Format} from '../Format';
 import '../Stylesheets/Markdown.css';
 import '../Stylesheets/Replies.css';
 
@@ -14,7 +15,7 @@ export default class Replies extends Component {
           <div className="media-body">
             <div className='info'>
               <span className='name'>{ reply.user.name }</span>
-              <span className='time light-gray-color'>{ reply.created_at }</span>
+              <span className='time light-gray-color'>{ Format.date(reply.created_at) }</span>
             </div>
             <div className='content markdown'>
               <span dangerouslySetInnerHTML={{ __html: reply.body_html}} />
