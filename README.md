@@ -108,9 +108,9 @@ Redux 介绍: <http://www.alloyteam.com/2015/09/react-redux/>
 
 ## Roadmap
 
-[] 登录与注册
+- [ ] 登录与注册
 
-[] 支持 创建 及 更新 操作
+- [ ] 支持 创建 及 更新 操作
 
 ## LICENSE
 
