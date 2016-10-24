@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Markdown from './Markdown';
 
-export default class newTopic extends Component {
+export default class NewTopic extends Component {
   constructor(props) {
     super(props);
     this.state = {

@@ -7,7 +7,7 @@ import Topic from '../Component/Topic';
 import Jobs from '../Component/Jobs';
 import Remote from '../Component/Remote';
 import Programmer from '../Component/Programmer';
-import newTopic from '../Component/newTopic';
+import NewTopic from '../Component/NewTopic';
 import App from '../App';
 
 
@@ -17,7 +17,7 @@ const RouteConfig = (
       <IndexRoute component={Home} />
       <Route path="topics" component={Topics}/>
       <Route path="topics?type=:name" component={Topics}/>
-      <Route path="topics/new" component={newTopic}/>
+      <Route path="topics/new" component={NewTopic}/>
       <Route path="topics/:id" component={Topic}/>
       <Route path="remote" component={Remote}/>
       <Route path="programmer" component={Programmer}/>
