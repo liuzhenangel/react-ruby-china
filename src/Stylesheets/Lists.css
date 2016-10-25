@@ -4,7 +4,6 @@
 }
 .panel {
   word-wrap: break-word;
-  white-space: pre-wrap;
   word-break: break-word;
 }
 .topic-lists .infos {
