@@ -2,6 +2,11 @@
   font-size: 15px;
   margin-bottom: 0;
 }
+.panel {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
 .topic-lists .infos {
   color: #ABA8A6;
   font-size: 12px;
