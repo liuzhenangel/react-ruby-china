@@ -7,7 +7,8 @@ import thunk from 'redux-thunk'
 import Route from './Config/Route';
 import reducer from './Reducer'
 
-import './index.css';
+import './css/bootstrap.css';
+import './Stylesheets/Index.css';
 
 const middleware = [ thunk ]
 if (process.env.NODE_ENV !== 'production') {

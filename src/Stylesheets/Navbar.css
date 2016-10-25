@@ -6,8 +6,16 @@
   overflow: scroll;
 }
 
+@media (min-width: 768px) {
+  .navbar-collapse.hide {
+    display: block!important;
+    height: auto!important;
+    padding-bottom: 0;
+    overflow: visible!important;
+  }
+}
 @media (max-width: 768px) {
-  .navbar-fixed-sm {
+  .navbar-default.navbar-fixed-sm {
     top: 0;
     border-width: 0 0 1px;
     position: fixed;

@@ -1,15 +1,15 @@
-.home-center {
+.panel-body.home-center {
   margin: auto;
   width: 480px;
 }
 
 @media (max-width: 768px) {
-  .reset-panel-xs {
+  .topic-lists.reset-panel-xs {
     margin-right: -15px;
     margin-left: -15px;
   }
 
-  .no-padding-xs {
+  .container .no-padding-xs {
     padding-left: 0;
     padding-right: 0;
   }
@@ -22,12 +22,12 @@
     margin-top: 50px;
   }
 
-  .reset-row-xs {
+  .row.reset-row-xs {
     margin-right: 0px;
     margin-left: 0px;
   }
 
-  .no-margin-bottom-xs {
+  .panel.no-margin-bottom-xs {
     margin-bottom: 0;
   }
 }
