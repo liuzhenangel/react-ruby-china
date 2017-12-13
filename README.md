@@ -96,11 +96,17 @@ Redux 介绍: <http://www.alloyteam.com/2015/09/react-redux/>
 
 在 `https://analytics.google.com` 创建新账户, 获到到相应的 JS 代码, 替换 index.html 中的javascript 代码片段.
 
-## Vue.js 项目
+## 引荐 Vue.js 项目
 
 项目 Demo 请访问: <http://v2ex.liuzhen.me/>
 
 项目代码: <https://github.com/liuzhenangel/v2ex_frontend>
+
+## 引荐个人博客项目
+
+项目 Demo 请访问: <http://liuzhen.me/>
+
+项目代码: <https://github.com/liuzhenangel/RBlog>
 
 ## 贡献者
 
