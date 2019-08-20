@@ -6,6 +6,10 @@
 
 项目 Demo 请访问: <http://ruby-china.liuzhen.me/>
 
+## 程序员面试助手
+
+项目链接: <http://showmebug.dao42.com/>
+
 ## 项目介绍
 
 react-ruby-china 项目是一个利用 react, react-dom, react-redux, react-router, redux, es6, redux-thunk 和 ruby-china api 实现的 RubyChina 社区克隆项目, 主要目的是为了学习 reac.js, 很适合学习 reac.js 的朋友参考.
