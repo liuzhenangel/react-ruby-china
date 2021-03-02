@@ -4,7 +4,7 @@
 
 ## Demo
 
-项目 Demo 请访问: <http://ruby-china.xiguamingpian.com//>
+项目 Demo 请访问: <http://ruby-china.xiguamingpian.com>
 
 ## 程序员面试助手
 
