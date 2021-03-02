@@ -4,15 +4,15 @@
 
 ## Demo
 
-项目 Demo 请访问: <http://ruby-china.liuzhen.me/>
+项目 Demo 请访问: <http://ruby-china.xiguamingpian.com//>
 
 ## 程序员面试助手
 
-项目链接: <http://showmebug.dao42.com/>
+项目链接: <http://www.showmebug.com/>
 
-## 电商小程序
+## 西瓜名片
 
-项目链接: https://www.3hxz.com/
+项目链接: https://www.xiguamingpian.com/
 
 ## 项目介绍
 
@@ -106,13 +106,13 @@ Redux 介绍: <http://www.alloyteam.com/2015/09/react-redux/>
 
 ## 引荐 Vue.js 项目
 
-项目 Demo 请访问: <http://v2ex.liuzhen.me/>
+项目 Demo 请访问: <http://v2ex.xiguamingpian.com/>
 
 项目代码: <https://github.com/liuzhenangel/v2ex_frontend>
 
 ## 引荐个人博客项目
 
-项目 Demo 请访问: <http://liuzhen.me/>
+项目 Demo 请访问: <http://blog.xiguamingpian.com/>
 
 项目代码: <https://github.com/liuzhenangel/RBlog>
 
